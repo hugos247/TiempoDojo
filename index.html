@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-bar">
+        <div class="header-bar-flex-container">
+            <h1><a href="./index.html">Dojo Weather</a></h1>
+            <ul class="header-links">
+                <li> <a href="#" onclick="alert('Loading weather report...')">Asuncion</a> </li>
+                <li> <a href="#" onclick="alert('Loading weather report...')">Luque</a></li>
+                <li><a href="#" onclick="alert('Loading weather report...')">San Lorenzo</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="nav-flex-container">
+            <h2>Luque</h2>
+            <div class="temp-picker-flex-container">
+                <label for="temp-control">Show temperature in</label>
+                <select name="temp-control" id="temp-control">
+                    <option value="celsius" selected>°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-container">
+        <div class="box">
+            <h2>Today</h2>
+            <img src="./assets/some_sun.png" class="figure" alt="sol">
+            <p>some sun</p>
+            <div class="temp-container">
+                <p class="max-temp" id="temp1"> 34</p>
+                <p class="min-temp" id="temp2">23</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Tomorrow</h2>
+            <img src="./assets/some_clouds.png" class="figure" alt="sol">
+            <p>some clouds</p>
+            <div class="temp-container">
+                <p class="max-temp" id="temp3">32</p>
+                <p class="min-temp" id="temp4">24</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Saturday</h2>
+            <img src="./assets/some_rain.png" class="figure" alt="sol">
+            <p>some rain</p>
+            <div class="temp-container">
+                <p class="max-temp" id="temp5">34</p>
+                <p class="min-temp" id="temp6">23</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Sunday</h2>
+            <img src="./assets/some_clouds.png" class="figure" alt="sol">
+            <p>some clouds</p>
+            <div class="temp-container">
+                <p class="max-temp" id="temp7">34</p>
+                <p class="min-temp" id="temp8">24</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="cookies">
+
+            <img src="./assets/cookie.png" alt="cookies!">
+                <div class="cookie-alert">
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize</p>
+                    <p>content and ads, to provide social media features and to</p>
+                    <p>analyse our traffic.<a href="#"> Read more...</a></p> 
+                </div>
+            <button onclick="removeCookies()" id="cookies-button">I accept</button>
+            <!--<div class="cookies-flex-container">
+            </div> -->
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
